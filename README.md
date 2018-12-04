@@ -1,5 +1,3 @@
-# greenhouse
-
 [![GoDoc](https://godoc.org/github.com/escholtz/greenhouse?status.svg)](https://godoc.org/github.com/escholtz/greenhouse)
 
 Go client for the Greenhouse.io API as defined at:
@@ -26,11 +24,11 @@ import (
 func main() {
 	client := greenhouse.NewClient()
 	board, err := client.Board("github")
-  // handle err
+	// handle err
 	fmt.Printf("%+v\n", board)
 
 	jobs, err := client.Jobs("github")
-  // handle err
+	// handle err
 	for _, j := range jobs.Jobs {
 		fmt.Println(j.Title, j.Location.Name)
 	}
