@@ -3,6 +3,7 @@
 [![GoDoc](https://godoc.org/github.com/escholtz/greenhouse?status.svg)](https://godoc.org/github.com/escholtz/greenhouse)
 [![Go Report Card](https://goreportcard.com/badge/github.com/escholtz/greenhouse)](https://goreportcard.com/report/github.com/escholtz/greenhouse)
 [![Build Status](https://api.travis-ci.org/escholtz/greenhouse.svg?branch=master)](https://travis-ci.org/escholtz/greenhouse)
+[![Coverage Status](https://coveralls.io/repos/github/escholtz/greenhouse/badge.svg?branch=master)](https://coveralls.io/github/escholtz/greenhouse?branch=master)
 
 Go client for the Greenhouse.io API as defined at:
 https://developers.greenhouse.io/job-board.html
