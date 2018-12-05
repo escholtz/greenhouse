@@ -27,12 +27,19 @@ import (
 
 func main() {
 	client := greenhouse.NewClient()
-	board, err := client.Board("github")
-	// handle err
-	fmt.Printf("%+v\n", board)
 
+	// Get the company name
+	board, err := client.Board("github")
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(board.Name)
+
+	// Get all job openings including descriptions
 	jobs, err := client.Jobs("github")
-	// handle err
+	if err != nil {
+		panic(err)
+	}
 	for _, j := range jobs.Jobs {
 		fmt.Println(j.Title, j.Location.Name)
 	}
